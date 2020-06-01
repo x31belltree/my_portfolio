@@ -23,7 +23,7 @@ body {
 #header {
 	width: 100%;
 }
-#header h1 {
+#header h2 {
 	margin: 0;
 	padding: 0;
 }
@@ -78,7 +78,6 @@ body {
 	width: 100%;
 	margin: auto ;
 	padding: auto;
-	padding-top: 20px;
 	clear: both;
     display: grid;
     grid-template-columns: 50vw 50vw;

@@ -26,7 +26,7 @@ header{
   border-style: solid;
   border-color: white;
 }
-.info h1{
+.info h2{
   font-weight: normal;
   font-size: 24px;
   margin: 0;
@@ -49,7 +49,7 @@ margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
 }
-.works > h1{
+.works > h2{
   font-weight: normal;
   font-size: 24px;
   text-align: center;
@@ -59,7 +59,7 @@ margin-bottom: 16px;
 .works > section{
   margin-bottom: 60px;
 }
-.works > section > h1{
+.works > section > h2{
   font-weight: normal;
 }
 .works p {

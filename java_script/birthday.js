@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html rang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>ベルの誕生日</title>
-</head>
-<body>
-
-</body>
-<script>
-  let num = 0;
+let num = 0;
 
 while(true){
   num = prompt("べるの生年月日を数字8桁で入力して");
@@ -19,5 +9,3 @@ while(true){
     console.log("不正解です");
   }
 }
-</script>
-</html>
