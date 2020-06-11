@@ -1,70 +1,171 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!doctype html>
+<html lang="ja" >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
-  <title>べる鈴木のプロフィール</title>
-  <link rel="icon" href="favicon.ico">
+    <title>べる鈴木のプロフィール</title>
+    <link rel="icon" href="favicon.ico">
   <meta name="description" content="べる鈴木のプロフィールサイトです">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="album.css" rel="stylesheet">
+    <link href="../example.css" rel="stylesheet">
+  </head>
+  <body >
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+  <div class="container">
+    <span class="skiplink-text">Skip to main content</span>
+  </div>
+</a>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
-      <div class="icon">
-        <img src="img/bell.jpg" width="120" height="120" alt="べるのアイコンです">
-      </div>
-        <div class="info">
-          <h2>べる鈴木</h2>
-          <p>兼業プログラマー</p>
-          <p>・スキル⇒HTML/CSS/</br>
-            JavaScript/Ruby/</br>
-            RubyonRails/Bootstrap/</br>
-            WordPress/Cloud9/</p>
-          <ul>
-            <li>
-              <a href="https://twitter.com/belltree" target="_blank">
-                <img src="img/twitter.png" width="20" height="20" alt="twitterのリンク">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/belltree" target="_blank">
-                <img src="img/facebook.png" width="20" height="20" alt="Facebookのリンク">
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/x31belltree" target="_blank">
-                <img src="img/github.png" width="20" height="20" alt="githubのリンク">
-              </a>
-            </li>
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-white">べる鈴木のプロフィールサイトです</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/belltree" target="_blank" class="text-white"><img src="img/twitter.png" width="20" height="20" alt="twitterのリンク"> twitter</a></li>
+            <li><a href="https://www.facebook.com/belltree" target="_blank" class="text-white"><img src="img/facebook.png" width="20" height="20" alt="Facebookのリンク"> Facebook</a></li>
+            <li><a href="https://github.com/x31belltree" target="_blank" class="text-white"><img src="img/github.png" width="20" height="20" alt="githubのリンク"> GitHub</a></li>
           </ul>
+        </div>
       </div>
     </div>
-  </header>
-<section class="works">
-  <h2>ポートフォリオ</h2>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="http://belltree.html.xdomain.jp/profile/" class="navbar-brand d-flex align-items-center">
+        <strong>belltree's Profile</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-  <section>
-    <img src="img/tatenaga.jpg" width="400" height="400" alt="smileLabのサイト">
-    <h2>HTML/CSS</h2>
-    <p>■<a href="http://belltree.html.xdomain.jp/profile/">べる鈴木のポートフォリオ</a>⇒このサイトです。</p>
-  <h2>wix</h2>
-    <p>■<a href="https://x31belltree.wixsite.com/smilelab" target="_blank">smileLab</a>⇒以前に、自身でイベント開催などをしていたときに作ったサイトです。</p>
-    <p>■<a href="https://x31belltree.wixsite.com/fujio" target="_blank">べる子ふじ雄</a>⇒LINEスタンプやグッズなどの宣伝用に作ったサイトです。</p>
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">べる鈴木</h1>
+      <p class="lead text-muted">兼業プログラマー</p>
+      <p>
+        <p class="btn btn-secondary my-2">HTML</p>
+        <p class="btn btn-secondary my-2">CSS</p>
+        <p class="btn btn-secondary my-2">JavaScript</p>
+        <p class="btn btn-secondary my-2">Ruby</p>
+        <p class="btn btn-secondary my-2">Rails</p>
+        <p class="btn btn-secondary my-2">Bootstrap</p>
+        <p class="btn btn-secondary my-2">WordPress</p>
+      </p>
+    </div>
   </section>
-  
-  <section>
-    <img src="http://belltree.wp.xdomain.jp/wp-content/uploads/2020/05/image.jpg" width="400" height="260" alt="WordPressのサイト">
-    <h2>WordPress</h2>
-    <p>■<a href="http://belltree.wp.xdomain.jp/" target="_blank">べる鈴木のプログラミング勉強日記</a>⇒サンプル用に作ったWordPressのブログサイトです。</p>
-    <h2>RubyonRails</h2>
-    <p>■<a href="https://desolate-beach-79305.herokuapp.com/" target="_blank">White Board</a>⇒RubyonRailsで作成した掲示板アプリです<div class=""></div></p>
 
-  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
 
-</section>
-  <footer>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/board.jpg" alt="WhiteBoard">
+            <div class="card-body">
+              <h5 class="card-title">White Board</h5>
+              <p class="card-text">Railsで作成した掲示板アプリです。</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://desolate-beach-79305.herokuapp.com/" class="btn btn-primary">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/sky.jpg" alt="blog">
+            <div class="card-body">
+              <h5 class="card-title">プログラミング日記</h5>
+              <p class="card-text">WordPressで作成したブログサイトです。</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <a href="http://belltree.wp.xdomain.jp/" class="btn btn-primary">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/lab.jpg" alt="smileLab">
+            <div class="card-body">
+              <h5 class="card-title">smileLab</h5>
+              <p class="card-text">イベント宣伝用のサイトです。Wix使用</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://x31belltree.wixsite.com/smilelab" class="btn btn-primary">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/cat.jpg" alt="fujio">
+            <div class="card-body">
+              <h5 class="card-title">べる子ふじ雄</h5>
+              <p class="card-text">LINEスタンプの宣伝用のサイトです。</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://x31belltree.wixsite.com/fujio" class="btn btn-primary">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/memo.jpg" alt="todo_app">
+            <div class="card-body">
+              <h5 class="card-title">ToDoApp</h5>
+              <p class="card-text">Railsで作成したタスク管理アプリです。</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn btn-primary">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/christmas.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">プロフィール</h5>
+              <p class="card-text">このサイトです。</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <a href="http://belltree.html.xdomain.jp/profile/" class="btn btn-primary">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">トップに戻る</a>
+    </p>
     <p>(c)べる鈴木.com</p>
-  </footer>
-</body>
+  </div>
+</footer>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>
+  window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery-slim.min.js"><\/script>')
+</script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script><script src="/docs/4.5/assets/js/vendor/anchor.min.js"></script>
+<script src="/docs/4.5/assets/js/vendor/clipboard.min.js"></script>
+<script src="/docs/4.5/assets/js/vendor/bs-custom-file-input.min.js"></script>
+<script src="/docs/4.5/assets/js/src/application.js"></script>
+<script src="/docs/4.5/assets/js/src/search.js"></script>
+<script src="/docs/4.5/assets/js/src/ie-emulation-modes-warning.js"></script>
+  </body>
 </html>
